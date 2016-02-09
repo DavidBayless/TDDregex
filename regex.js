@@ -1,11 +1,16 @@
-// function complexPassword(str) {
-//   var valid = false;
-//   /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d][A-Za-z\d!@#$%^&*()_+]{7,19}$/.test(str) ? valid = true : valid = false;
-//   console.log(valid);
-//   return valid;
-// }
+function complexPassword(str) {
+  var valid = false;
+  /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d][A-Za-z\d!@#$%^&*()_+]{7,}$/.test(str) ? valid = true : valid = false;
+  console.log(valid);
+  return valid;
+}
 
-// complexPassword('hElloasd');
+complexPassword('hElloasd');
+complexPassword('h3Ll()sd');
+complexPassword('h3E(d');
+complexPassword('ASDFASDFASFSD@32342342342adsfasdfasdfasdfasdf');
+
+
 
 function checkPW(str) {
   var numbers = false;
